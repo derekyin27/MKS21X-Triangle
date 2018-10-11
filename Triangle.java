@@ -1,8 +1,3 @@
-public class Triangle {
-  private Point v1;
-  private Point v2;
-  private Point v3;
-  
   public Triangle(Point vertex1, Point vertex2, Point vertex3) {
     v1 = vertex1;
     v2 = vertex2;
@@ -14,6 +9,9 @@ public class Triangle {
     v2 = new Point(x2, y2);
     v3 = new Point(x3, y3);
   }
+public double Distance(Point a, Point b){
+return Math.sqrt(Math.pow((a.getX()- b.getX()), 2) + Math.pow((a.getY()- b.getY()), 2));
+}
   
   public Point getV1() {
     return v1;
@@ -28,23 +26,22 @@ public class Triangle {
   }
 
   public double getPerimeter() {
-    return "Perimeter = " (distance(v1, v2) + distance(v2, v3) + distance(v1, v3));
+    return (Distance(v1, v2) + Distance(v2, v3) + Distance(v1, v3));
   }
   
   public Point getVertex(int p) {
-    if (p = 0) {
+    if (p == 0) {
       Point copy1 = new Point(v1);
       return copy1;
     }
-    if (p = 1) {
+    if (p == 1) {
       Point copy2 = new Point(v2);
       return copy2;
     }
-    if (p = 2) {
+    if (p == 2) {
       Point copy3 = new Point(v3);
       return copy3;
     }
-    else return "Not in index!"
   }
   
   public String toString() {
@@ -52,17 +49,17 @@ public class Triangle {
   }
   
   public void setVertex(int p, Point newp) {
-    if (p = 0) {
+    if (p == 0) {
       v1 = newp;
     }
-    if (p = 1) {
+    if (p == 1) {
       v2 = newp;
     }
-    if (p = 2) {
+    if (p == 2) {
       v3 = newp;
     }
-    else return "Not in index!"
   }
+}
   
   
       
