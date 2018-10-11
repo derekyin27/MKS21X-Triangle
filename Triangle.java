@@ -1,22 +1,25 @@
 public class Triangle {
-  private int v1;
-  private int v2;
-  private int v3;
+  private Point v1;
+  private Point v2;
+  private Point v3;
   
-  public Triangle(int vertex1, int vertex2, int vertex3) {
+  public Triangle(Point vertex1, Point vertex2, Point vertex3) {
     v1 = vertex1;
     v2 = vertex2;
     v3 = vertex3;
   }
   
-  public int getV1() {
+  public Point getV1() {
     return v1;
   }
   
-  public int getV2() {
+  public Point getV2() {
     return v2;
   }
   
-  public int getV3() {
+  public Point getV3() {
     return v3;
   }
+
+  public double getPerimeter() {
+    return distance(
