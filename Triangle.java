@@ -22,4 +22,25 @@ public class Triangle {
   }
 
   public double getPerimeter() {
-    return distance(
+    return "Perimeter = " (distance(v1, v2) + distance(v2, v3) + distance(v1, v3));
+  }
+  
+  public Point getVertex(p) {
+    if (p = 0) {
+      Point copy1 = new Point(v1);
+      return copy1;
+    }
+    if (p = 1) {
+      Point copy2 = new Point(v2);
+      return copy2;
+    }
+    if (p = 2) {
+      Point copy3 = new Point(v3);
+      return copy3;
+    }
+    else return "Not in index!"
+  }
+  
+  public String toString() {
+    System.out.println(
+      
