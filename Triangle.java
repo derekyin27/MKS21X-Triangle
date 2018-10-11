@@ -9,6 +9,12 @@ public class Triangle {
     v3 = vertex3;
   }
   
+  public Triangle(double x1, double y1, double x2, double y2, double x3, double y3) {
+    v1 = new Point(x1, y1);
+    v2 = new Point(x2, y2);
+    v3 = new Point(x3, y3);
+  }
+  
   public Point getV1() {
     return v1;
   }
@@ -25,7 +31,7 @@ public class Triangle {
     return "Perimeter = " (distance(v1, v2) + distance(v2, v3) + distance(v1, v3));
   }
   
-  public Point getVertex(p) {
+  public Point getVertex(int p) {
     if (p = 0) {
       Point copy1 = new Point(v1);
       return copy1;
@@ -42,5 +48,21 @@ public class Triangle {
   }
   
   public String toString() {
-    System.out.println(
+    return "Triangle: A(" + x.v1 + "," + y.v1 + ") B(" + x.v2 + "," + y.v2 + ") C(" + x.v3 + "," + y.v3 + ")";
+  }
+  
+  public void setVertex(int p, Point newp) {
+    if (p = 0) {
+      v1 = newp;
+    }
+    if (p = 1) {
+      v2 = newp;
+    }
+    if (p = 2) {
+      v3 = newp;
+    }
+    else return "Not in index!"
+  }
+  
+  
       
