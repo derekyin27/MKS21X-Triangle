@@ -39,6 +39,7 @@
       Point copy3 = new Point(v3);
       return copy3;
     }
+    return null;
   }
   
   public String toString() {
