@@ -45,7 +45,7 @@ return Math.sqrt(Math.pow((a.getX()- b.getX()), 2) + Math.pow((a.getY()- b.getY(
   }
   
   public String toString() {
-    return "Triangle: A(" + x.v1 + "," + y.v1 + ") B(" + x.v2 + "," + y.v2 + ") C(" + x.v3 + "," + y.v3 + ")";
+    return "Triangle: A(" + v1.getX() + "," + v1.getY() + ") B(" + v2.getX() + "," + v2.getY() + ") C(" + v3.getX() + "," + v3.getY() + ")";
   }
   
   public void setVertex(int p, Point newp) {
