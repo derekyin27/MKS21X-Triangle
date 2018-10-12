@@ -9,9 +9,6 @@
     v2 = new Point(x2, y2);
     v3 = new Point(x3, y3);
   }
-public double Distance(Point a, Point b){
-return Math.sqrt(Math.pow((a.getX()- b.getX()), 2) + Math.pow((a.getY()- b.getY()), 2));
-}
   
   public Point getV1() {
     return v1;
